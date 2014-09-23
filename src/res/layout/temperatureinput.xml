@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="275dp"
+    android:background="@color/commonBackground"
+    android:id="@+id/LayoutTemperatureInput"
+    >
+<TextView android:text="@string/txtTemperature"
+			android:id="@+id/TemperatureText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<TextView android:id="@+id/TemperatureTextMeasure01"
+			android:layout_toRightOf="@id/TemperatureText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtInputTemperature" 
+			android:inputType="numberDecimal"			
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/TemperatureText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<TextView android:text="@string/txtNotes"
+			android:id="@+id/TemperatureNotesText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtInputTemperature"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<EditText android:id="@+id/edtInputNotes" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/TemperatureNotesText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+			
+<TextView android:text="@string/txtDate"
+			android:id="@+id/DateText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtInputNotes"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtTemperatureInputRecDate" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/DateText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+
+<Button android:text="@string/buttonSave" 
+		android:id="@+id/btnSaveTemperature" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/edtTemperatureInputRecDate"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+<Button android:text="@string/buttonDelete" 
+		android:id="@+id/btnDeleteTemperature" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/btnSaveTemperature"
+		android:layout_alignTop="@id/btnSaveTemperature"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+
+
+</RelativeLayout>
+</ScrollView>

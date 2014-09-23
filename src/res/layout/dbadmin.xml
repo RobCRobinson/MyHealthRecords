@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutDBAdmin"
+    >
+    
+<TextView android:text="@string/dbadminText"
+			android:id="@+id/DBAdminText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<ScrollView android:id="@+id/ScrollView01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutButtons"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/rowOdd"
+    android:layout_marginTop="5dp"
+    >
+
+<Button android:text="@string/DBExport" 
+		android:id="@+id/btnDBExport" 
+		android:onClick="dbExport"
+		android:layout_width="200dp"
+		android:layout_height="40dp"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_gravity="center_vertical|center_horizontal|center"
+/>
+
+
+<TextView android:text="@string/txtDBExport"
+			android:id="@+id/DBAdminText03"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/rowEven"
+    android:layout_marginTop="5dp"
+    >
+
+<Button android:text="@string/DBImport" 
+		android:id="@+id/btnDBImport" 
+		android:onClick="dbImport"
+		android:layout_width="200dp"
+		android:layout_height="40dp"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_gravity="center_vertical|center_horizontal|center"
+/>
+
+
+<TextView android:text="@string/txtDBImport"
+			android:id="@+id/DBAdminText04"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/rowOdd"
+    android:layout_marginTop="5dp"
+    >
+
+<Button android:text="@string/DBBackup" 
+		android:id="@+id/btnDBBackup" 
+		android:onClick="dbBackup"
+		android:layout_width="200dp"
+		android:layout_height="40dp"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_gravity="center_vertical|center_horizontal|center"
+/>
+
+
+<TextView android:text="@string/txtDBBackup"
+			android:id="@+id/DBAdminText05"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/rowEven"
+    android:layout_marginTop="5dp"
+    >
+<Button android:text="@string/DBRestore" 
+		android:id="@+id/btnDBRestore" 
+		android:onClick="dbRestore"
+		android:layout_width="200dp"
+		android:layout_height="40dp"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_gravity="center_vertical|center_horizontal|center"
+/>
+
+
+<TextView android:text="@string/txtDBRestore"
+			android:id="@+id/DBAdminText05"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/warningBack"
+    android:layout_marginTop="5dp"
+    >
+ <Button android:text="@string/DBReset" 
+		android:id="@+id/btnDBReset" 
+		android:onClick="dbReset"
+		android:layout_width="200dp"
+		android:layout_height="40dp"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_gravity="center_vertical|center_horizontal|center"
+>
+</Button>
+
+<TextView android:text="@string/txtDBReset"
+			android:id="@+id/DBAdminText02"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/warningText"
+			android:background="@color/warningBack"
+			></TextView>  
+
+</LinearLayout>	 
+
+</LinearLayout>	
+
+</ScrollView>
+
+</LinearLayout>

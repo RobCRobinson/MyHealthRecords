@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="305dp"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutTestInput"
+    >
+
+<TextView android:text="@string/txtDate"
+			android:id="@+id/DateText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtInputTestRecDate" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/DateText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText> 
+
+ <TextView android:text="@string/txtTestName"
+			android:id="@+id/TestNameText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtInputTestName" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/DateText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText> 
+
+<TextView android:text="@string/txtTestResult"
+			android:id="@+id/TestResultText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtInputTestResult" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/DateText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText> 
+    			  
+ <TextView android:text="@string/txtNotes"
+			android:id="@+id/NotesText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>   
+    
+<EditText android:id="@+id/edtInputTestDetail" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="294dp"
+			android:height="140dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+
+<Button android:text="@string/buttonSave" 
+		android:id="@+id/btnSaveTest" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+<Button android:text="@string/buttonDelete" 
+		android:id="@+id/btnDeleteTest" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/btnSaveTest"
+		android:layout_alignTop="@id/btnSaveTest"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>

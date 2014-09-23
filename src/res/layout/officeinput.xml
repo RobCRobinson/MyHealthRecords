@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutOfficeInput"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@color/commonBackground"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btnLinkContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:src="@drawable/ic_card"
+        android:width="40dp" >
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/LookupKey01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnLinkContact"
+        android:textColor="@color/commonText" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/ContactId01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnLinkContact"
+        android:textColor="@color/commonText" >
+    </TextView>
+    
+          
+        <Button
+        android:id="@+id/btnCallPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnLinkContact"
+        android:height="25dp"
+        android:width="180dp"
+        />
+        
+         <Button
+        android:id="@+id/btnViewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCallPhone"
+        android:layout_toRightOf="@+id/btnLinkContact"
+        android:height="20dp"
+        android:width="60dp"
+        android:text="@string/viewContact"
+        />
+
+    <TextView
+        android:id="@+id/OfficeNameText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLinkContact"
+        android:text="@string/txtOfficeName"
+        android:textColor="@color/commonText" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtInputOfficeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OfficeNameText01"
+        android:gravity="top"
+        android:height="40dp"
+        android:width="294dp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/OfficeHoursText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtInputOfficeName"
+        android:text="@string/txtOfficeHours"
+        android:textColor="@color/commonText" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtInputOfficeHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OfficeHoursText01"
+        android:gravity="top"
+        android:height="40dp"
+        android:width="294dp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/OfficeNotesText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtInputOfficeHours"
+        android:text="@string/txtNotes"
+        android:textColor="@color/commonText" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtInputOfficeNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OfficeNotesText01"
+        android:gravity="top"
+        android:height="120dp"
+        android:singleLine="false"
+        android:width="294dp" 
+		/>
+
+    <Button
+        android:id="@+id/btnSaveOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtInputOfficeNotes"
+        android:layout_marginTop="20dp"
+        android:height="25dp"
+        android:text="@string/buttonSaveOffice"
+        android:width="145dp" />
+
+    <Button
+        android:id="@+id/btnDeleteOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSaveOffice"
+        android:layout_alignBottom="@+id/btnSaveOffice"
+        android:layout_toRightOf="@+id/btnSaveOffice"
+        android:height="25dp"
+        android:text="@string/buttonDelete"
+        android:width="145dp" />
+
+ 
+
+</RelativeLayout>
+
+</ScrollView>

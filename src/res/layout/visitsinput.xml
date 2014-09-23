@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutVisitInput"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@color/commonBackground"
+    android:orientation="vertical" >
+
+    <TextView android:text="@string/txtDate"
+			android:id="@+id/VisitDateText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+	
+	<EditText android:id="@+id/edtVisitInputRecDate" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/VisitDateText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+    
+    <TextView
+        android:id="@+id/VisitsNameText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtOfficeName"
+        android:textColor="@color/commonText" 
+        android:layout_below="@id/edtVisitInputRecDate">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spnVisitsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VisitsNameText01" />
+    
+    <TextView
+        android:id="@+id/VisitsHappenedText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtWhatHappened"
+        android:textColor="@color/commonText" 
+        android:layout_below="@id/spnVisitsName">
+    </TextView>
+    
+    <EditText
+        android:id="@+id/edtInputVisitHappened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VisitsHappenedText01"
+        android:gravity="top"
+        android:height="90dp"
+        android:singleLine="false"
+        android:width="294dp" 
+		/>
+        
+
+    <TextView
+        android:id="@+id/VisitNotesText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtInputVisitHappened"
+        android:text="@string/txtNotes"
+        android:textColor="@color/commonText" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtInputVisitNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VisitNotesText01"
+        android:gravity="top"
+        android:height="90dp"
+        android:singleLine="false"
+        android:width="294dp" 
+		/>
+
+    <Button
+        android:id="@+id/btnSaveVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtInputVisitNotes"
+        android:layout_marginTop="20dp"
+        android:height="25dp"
+        android:text="@string/buttonSaveVisit"
+        android:width="145dp" />
+
+    <Button
+        android:id="@+id/btnDeleteVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSaveVisit"
+        android:layout_alignBottom="@+id/btnSaveVisit"
+        android:layout_toRightOf="@+id/btnSaveVisit"
+        android:height="25dp"
+        android:text="@string/buttonDelete"
+        android:width="145dp" />
+
+    
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Health Records</string>
+    <string name="version">Version 1.9</string>
+    <string name="package_name">com.ravenmistmedia.MyHealthRecords</string>
+    <string name="linkHome">ravenmistmedia.com</string>
+    <string name="linkUserManual">https://docs.google.com/file/d/0B57RJDZSaUxlMVBsM3BVLXI4Wlk/edit?usp=sharing</string>
+   	<string name="linkUserManualRaven">http://ravenmistmedia.com/downloads/MyHealthRecords-User%20Manual.pdf</string>
+   	
+    <string name="lastRecords">20</string>
+    
+    <string-array name="mainmenu_array">
+        <item>History</item>
+        <item>Medications</item>
+        <item>Weight</item>
+        <item>Temperature</item>
+        <item>Blood Pressure</item>
+        <item>Blood Sugar</item>
+        <item>Lab and Test Results</item>
+        <item>Office Visits</item>
+        <item>Office Info</item>
+        <item>Data Analysis</item>
+        <item>Documents</item>
+        <item>Exit</item>
+    </string-array>
+    
+    <string-array name="optionsmenu_array">
+    	<item>Persons</item>
+    	<item>Database</item>
+    	<item>Settings</item>
+    	<item>Help/Feedback</item>
+    </string-array>
+    
+    <string-array name="mainmenu_descriptions_array">
+        <item>Medical History, Conditions, Allergies, Notes, etc.</item>
+        <item>Prescription and Non-Prescription Medications and Diet Supplements</item>
+        <item>Body Weight and Body Mass Index</item>
+        <item>Body Temperature</item>
+        <item>Blood Pressure and Pulse</item>
+        <item>Blood Glucose Readings</item>
+        <item>Results from Medical Tests</item>
+        <item>Who Was Met, What Happened, etc.</item>
+        <item>Office Hours, Information, Link to Contact</item>
+        <item>Analysis, reports, and graphs</item>
+        <item>Files, Reports, Snapshots</item>
+        <item>Exits the Application</item>
+    </string-array>
+    
+    <string-array name="mainmenuactivities_array">
+        <item>HistoryActivity</item>
+        <item>MedicationsActivity</item>
+        <item>WeightsActivity</item>
+        <item>TemperatureActivity</item>
+        <item>BloodPressureActivity</item>
+        <item>BloodGlucoseActivity</item>
+        <item>TestsActivity</item>
+        <item>VisitsActivity</item>
+        <item>OfficesActivity</item>
+        <item>AnalysisActivity</item>
+        <item>DocumentsActivity</item>
+        <item>Exit</item>
+    </string-array>
+    
+    <string name="aboutText">My Health Records is developed by\nRob Robinson.\n\nCopyright &#169; 2011-2014.  All rights are reserved.
+    \n\nFor technical support, help, documentation, and more information, please visit my website at
+    </string>
+    
+    <string name="aboutText2">If you click the following button, you can send me an email with your feedback, suggestions, or problems.\n
+    The email will include some important information about your device which will help me debug any problems.\n\n
+    </string>
+    
+    <string name="aboutText3">User Manual\nPDF format - approximately 2.1 Mb</string>
+    
+    <string name="historyText">This area is for you to list your medical history, conditions, and allergies along with any details such as dates and names. 
+    </string>
+    
+    <string name="medicationsText">This area is for you to list your prescription and non-prescription medications, as well as dietary supplements.  You should include details such as dosages and how frequently you take the medication. 
+    </string>
+    
+    <string name="temperatureText">This area is for you to track your body temperature.        
+    </string>
+    
+    <string name="weightsText">This area is for you track your weight.  The BMI will automatically be calculated from the height and weight that you enter.
+    </string>
+    
+    <string name="bloodpressureText">This area is for you track your blood pressure and pulse.
+    </string>
+    
+    <string name="bloodsugarText">This area is for you track your blood glucose readings, along with details of your meals, and any notes you may need to make.
+    </string>
+    
+    <string name="testText">This area is for you track the results of your medical tests, lab tests, and any other results that you want to maintain.
+    </string>
+    
+    <string name="visitsText">This area is for you to track your office visits, who you met, what happened, and more.
+    </string>
+    
+    <string name="officesText">This area is for you to record details about medical offices, such as hours, who to call, and more.
+    </string>
+        
+    <string name="dbadminText">This area includes database administration functions such as resetting the database, importing and exporting data to a text file,
+    etc.  Please be careful with some of these functions as they can wipe out your saved data. 
+    </string>
+    
+    <string name="documentsText">This area is for you to keep track of files and documents such as lab reports.  You can either include files that are on your device
+        or use your camera to take a photo of the document if this device has a camera. 
+    </string>
+    
+    <string name="settingsText">Select your preferred settings. 
+    </string>
+    
+    <string name="enterNewRecord">Enter New Record</string>
+    <string name="inputTitle">Enter the details</string>
+    <string name="buttonSave">Save This Record</string>
+    <string name="buttonDelete">Delete This Record</string>
+    <string name="buttonExport">Export</string>
+    <string name="buttonImport">Import</string>
+    
+    <string name="alertOops">Oops</string>
+    <string name="alertSaved">Saved</string>
+    <string name="alertUnableDelete">The record cannot be deleted at this time.</string> 
+    <string name="alertUnableSave">The record cannot be saved at this time.</string> 
+    <string name="alertUnableParseDate">The date entered appears to be in an invalid format.\nAn example of the correct format is </string> 
+    <string name="alertUnableParseFloat">The value that you entered in the {FIELD} field must be only whole numbers and decimal points.</string>
+    <string name="alertSettingsSaved">The settings have been saved.</string>  
+    
+    <string name="records">Records</string>
+	<string name="allrecords">All</string>
+	<string name="last">Last</string>
+	
+	<string name="UnitsOfMeasure">Units of Measure</string>
+	
+	<string-array name="spnMeasures_array">
+    	<item>U.S. Imperial(inches, pounds, farenheit, etc.)</item>
+    	<item>Metric (centimeters, kilograms, celsius, etc.)</item>
+    </string-array> 
+    
+    <string-array name="MeasuresHeight">
+    	<item>in</item>
+    	<item>cm</item>
+    </string-array>
+    
+    <string-array name="MeasuresWeight">
+    	<item>lbs</item>
+    	<item>kg</item>
+    </string-array>
+    
+    <string-array name="MeasuresTemp">
+    	<item>°F</item>
+    	<item>°C</item>
+    </string-array>
+    
+    <string-array name="history_array">
+        <item>Date and Time</item>
+        <item>History</item>        
+    </string-array>
+    
+    <string-array name="documents_array">
+        <item>Date and Time</item>
+        <item>Filename</item>
+        <item>Notes</item>        
+    </string-array>
+    
+    <string-array name="medications_array">
+        <item>Start Date</item>
+        <item>End Date</item>
+        <item>Medication and Dosage</item>
+        <item>Adverse Reactions and Other Notes</item>        
+    </string-array>
+    
+    <string name="txtTemperature">Temperature</string>        
+    <string name="txtHeight">Height</string>
+    <string name="txtWeight">Weight</string>
+    <string name="txtDate">Date and Time</string>
+    <string name="txtDateOptional">Date and Time (Optional)</string>
+    
+    <string name="txtStartDate">Start Date (Optional)</string>
+    <string name="txtEndDate">End Date (Optional)</string>
+    <string name="txtMedicationDetail">Medication and Dosage</string>
+    <string name="txtAdverseDetail">Adverse Reactions and Other Notes</string>
+        
+    <string-array name="weight_array">
+        <item>Height</item>
+        <item>Weight</item>
+        <item>BMI</item>
+        <item>Date and Time</item>
+        <item>Notes</item>
+    </string-array>
+    
+    <string-array name="temperature_array">
+        <item>Temperature</item>
+        <item>Date and Time</item>
+        <item>Notes</item>
+    </string-array>
+    
+    <string name="txtSystolic">Systolic (top number)</string>
+    <string name="txtDiastolic">Diastolic (bottom number)</string>
+    <string name="txtPulse">Pulse (heart rate)</string>
+        
+    <string-array name="bloodpressure_array">
+        <item>Blood Pressure</item>
+        <item>Pulse</item>
+        <item>Date and Time</item>
+        <item>Notes</item>
+    </string-array>
+    
+    <string-array name="bloodsugarprepost">
+    	<item>Before a Meal</item>
+    	<item>After a Meal</item>
+    	<item>No Meal</item>
+    </string-array>
+    
+    <string-array name="bloodsugarmealtype">
+       	<item>Breakfast</item>
+    	<item>Lunch</item>
+    	<item>Dinner</item>
+    	<item>Snack</item>
+    	<item>Brunch</item>
+    	<item>No Meal</item>
+    </string-array>
+    
+    <string-array name="bloodglucose_array">
+    	<item>Blood Glucose</item>
+    	<item>Pre/Post Meal</item>
+    	<item>Medications</item>
+    	<item>Meal</item>
+    	<item>Food</item>
+    	<item>Date/Time</item>
+    	<item>Notes</item>
+    </string-array>
+    
+    <string-array name="tests_array">
+    	<item>Test Name</item>
+    	<item>Test Results</item>
+    	<item>Date/Time</item>
+    	<item>Notes</item>
+    </string-array>
+    
+    <string-array name="visits_array">
+    	<item>Date</item>
+    	<item>Office</item>
+    	<item>What Happened</item>
+    	<item>Notes</item>
+    </string-array>
+    
+    <string-array name="offices_array">
+    	<item>Office Name</item>
+    	<item>Office Hours</item>
+    	<item>Notes</item>
+    </string-array>
+    
+    <string-array name="tablenames_array">
+    	<item>All Records</item>
+    	<item>History</item>       
+        <item>Blood Pressure</item>
+        <item>Blood Sugar</item>
+        <item>Documents</item>
+        <item>Lab Tests and Results</item>
+        <item>Medications</item>
+        <item>Offices</item>
+        <item>Temperatures</item>
+        <item>Weight</item>
+    </string-array>
+    
+    <string-array name="backgroundColors_array">
+    	<item>Blue</item>
+    	<item>Lavender</item>
+    	<item>Peach</item>
+    	<item>Green</item>
+    </string-array>
+    
+    <string name="txtBloodGlucoseReading">Blood Glucose Reading</string>
+    <string name="txtBloodGlucosePrePost">Is this before or after a meal?</string>
+    <string name="txtBloodGlucoseMealType">What type of meal was this?</string>
+    <string name="txtBloodGlucoseMedication">List any medications that you have taken</string>
+    <string name="txtBloodGlucoseFoods">List any foods that you have eaten</string>
+    <string name="txtNotes">Notes</string>
+    
+    <string name="DBReset">Reset the database</string> 
+    <string name="txtDBReset">Completely wipes all data from the database, and recreates all of the database tables.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="warning">Warning!</string>
+    <string name="warningMessage">This will delete all previously saved data.  Are you certain that you want to do this?</string>
+    <string name="DBExport">Export the records</string>
+    <string name="txtDBExport">Export the records from the database into a text or XML file.  You can then print this out, or open it on your computer to manipulate it.</string>
+    <string name="DBImport">Import new records</string>
+    <string name="txtDBImport">Import records from a XML file into the database.</string>
+    <string name="DBBackup">Backup the database</string>
+    <string name="txtDBBackup">Copy the database to the SD card.</string>
+    <string name="DBRestore">Restore the database</string>
+    <string name="txtDBRestore">Restores the database from the SD card</string>
+    <string name="txtLocationToExport">Select an Output Filename</string>
+    <string name="ExportLocation">MyHealthRecords.xml</string>
+    <string name="ExportLocation2">MyHealthRecords.txt</string>
+    <string name="txtDataToExport">Records to Export</string>
+    <string name="txtLocationToImport">Select an Input Filename</string>
+    <string name="ImportLocation">MyHealthRecords.xml</string>
+    <string name="txtDataToImport">Records to Import</string>
+    <string name="FontSize">Font Size for Data Rows</string>
+    <string name="BackgroundColor">Background Color</string>
+    
+    <string name="feedbackText">Problems, Suggestions, Feedback</string>
+    
+    <string name="EnablePassword">Enable Password</string>
+    <string name="SecretAnswer">Secret Answer</string>
+    <string name="SecretQuestion">Secret Question</string>
+    <string name="Password">Password</string>
+    <string name="enteryourpassword">Enter Your Password to Continue</string>
+    <string name="forgotpassword">Forgot Password? Click Here.</string>
+    <string name="go">Login</string>
+    <string name="buttonConfirm">Check Answer</string>
+    <string name="buttonUnlockHelp">If you really can\'t remember your secret answer and password, then Click Here.</string>
+    <string name="helpme">My Health Records - Secret Answer Unlock</string>
+    <string name="helpmebody">By sending this email, you are sending your encrypted secret answer to the developer of this application.  He will reply back to you with the decrypted secret answer so that you may unlock the application.  This should only be used as a last resort, as it may take a few days to receive an email back.</string>
+    
+    <string name="titlePerson">Add a New Person</string>
+    <string name="txtPersonName">Person\'s Name</string>
+    <string name="buttonSavePerson">Create This Person</string>
+    <string name="txtSwitching">Switching to</string>
+    <string name="txtAdding">Adding</string>
+    <string name="txtRenaming">Renaming</string>
+    <string name="txtTo">to</string>
+    <string name="txtDeleting">Deleting</string>
+    <string name="txtCantDelete">You cannot delete this person since it is the only person.  Either rename the person, or add a new person first.</string>
+    <string name="buttonEditPersons">Edit Multiple Persons</string>
+    <string name="personsText">This area is for you to administer the multiple persons for which you are maintaining records.</string>
+    <string name="personNames">Current Persons</string>
+    <string name="buttonChangeName">Rename Person</string>
+    <string name="buttonSetDefault">Switch to Person</string>
+    <string name="buttonDeletePerson">Delete This Person</string>
+    
+    <string name="txtTestName">Test Name</string>
+    <string name="txtTestResult">Result</string>
+    
+    <string name="txtOfficeName">Office Name</string>
+    <string name="txtOfficeHours">Office Hours</string>
+    <string name="txtLinkToContact">Link to Contact</string>
+    <string name="buttonSaveOffice">Save Office</string>
+    <string name="viewContact">View</string>
+    <string name="txtWhatHappened">What Happened?</string>
+    <string name="buttonSaveVisit">Save Visit</string>
+    <string name="addNewOffice">Add New Office</string>
+    
+    <string name="txtFilename">Filename</string>
+    <string name="viewFile">View File</string>
+    
+    <string name="filterTitle">Filter Records</string>
+    <string name="filterInstruction">Enter your keyword(s) to search the records</string>
+    <string name="alertSelectAnOffice">Please select an office from the list before saving this visit.</string>
+    <string name="alertOfficeRequired">Office Name is required</string>
+    <string name="alertNeedOffices">You need to add offices before you will be able to add office visits.\nPlease go to the Offices section to add new offices.</string>
+ 	<string name="alertNoIntent">This device does not have a standard activity for the Contacts application.\nI cannot determine how to load your contacts.</string>
+ 	
+ 	<string-array name="reports_array">
+    	<item>Blood Pressure Time of Day Analysis</item>
+    	<item>Blood Pressure Progress Analysis</item>
+    	<item>Blood Sugar Time of Day Analysis</item>
+    	<item>Blood Sugar Progress Analysis</item>
+    	<item>Weight Progress Analysis</item>
+    	<item>BMI Progress Analysis</item>
+    	<item>Temperature Progress Analysis</item>
+    </string-array>
+    
+ 	<string-array name="reportsdesc_array">
+    	<item>a report that displays the average readings by time of day</item>
+    	<item>a graph that displays the readings across time and date</item>
+    	<item>a report that displays the average readings by time of day</item>
+    	<item>a graph that displays the readings across time and date</item>
+    	<item>a graph that displays the readings across time and date</item>
+    	<item>a graph that displays the readings across time and date</item>
+    	<item>a graph that displays the readings across time and date</item>
+    </string-array>
+    
+ 	<string name="txtDataset">Select a Report</string>
+ 	
+ 	<string-array name="timespan_array">
+ 	    <item>All records</item>
+ 	    <item>12 months</item>
+ 	    <item>6 months</item>
+ 	    <item>90 days</item>
+ 	    <item>60 days</item>
+ 	    <item>30 days</item>
+ 	    <item>14 days</item>
+ 	    <item>7 days</item>
+ 	</string-array>
+    
+ </resources>

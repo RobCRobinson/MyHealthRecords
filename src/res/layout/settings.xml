@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutSettingsMain">
+
+<ScrollView 
+android:id="@+id/SettingsScroller"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutSettings"
+    >
+
+<TextView android:text="@string/settingsText"
+			android:id="@+id/SettingsText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText">
+			</TextView>
+
+<TextView android:text="@string/UnitsOfMeasure"
+ 	android:id="@+id/lblMeasurements"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+ 	
+
+<Spinner android:id="@+id/spnMeasures"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:prompt="@string/UnitsOfMeasure"
+ 	android:drawSelectorOnTop="true" >
+ 	</Spinner>
+
+<TextView android:text="@string/FontSize"
+ 	android:id="@+id/lblFontSize"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/spnMeasures"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+
+<EditText android:id="@+id/edtFontSize" 
+			android:inputType="number"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblFontSize"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			></EditText>
+
+<TextView android:text="@string/BackgroundColor"
+ 	android:id="@+id/lblBackgroundColor"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+ 	
+
+<Spinner android:id="@+id/spnBackgroundColor"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:prompt="@string/BackgroundColor"
+ 	android:drawSelectorOnTop="true" >
+ 	</Spinner>
+
+<TextView android:text="@string/Password"
+ 	android:id="@+id/lblPassword"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/spnBackgroundColor"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+
+<EditText android:id="@+id/edtPassword" 
+			android:password="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblPassword"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			></EditText>
+			
+<TextView android:text="@string/SecretQuestion"
+ 	android:id="@+id/lblSecretQuestion"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/edtPassword"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+
+<EditText android:id="@+id/edtSecretQuestion" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblSecretQuestion"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			></EditText>
+			
+<TextView android:text="@string/SecretAnswer"
+ 	android:id="@+id/lblSecretAnswer"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/edtSecretQuestion"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+
+<EditText android:id="@+id/edtSecretAnswer" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblSecretAnswer"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			></EditText>
+			
+<TextView android:text="@string/EnablePassword"
+ 	android:id="@+id/lblEnablePassword"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/edtSecretAnswer"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+
+<CheckBox android:id="@+id/chkPasswordEnabled" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblEnablePassword"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			></CheckBox>
+
+
+<Button android:id="@+id/btnSaveSettings"
+	android:text="@string/buttonSave"
+    android:padding="2dp"
+    android:layout_marginTop="5dp"
+    android:onClick="saveSettings"
+    android:layout_width="200dp"
+	android:layout_height="40dp"
+	android:gravity="center_vertical|center_horizontal" 
+	android:layout_gravity="center_vertical|center_horizontal|center"
+	>
+</Button>
+
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

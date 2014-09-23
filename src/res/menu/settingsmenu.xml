@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/editpersons"
+		android:icon="@drawable/ic_persons"
+        android:title="Persons" />
+<item android:id="@+id/dbadmin"
+		android:icon="@drawable/ic_showlast"
+        android:title="Database" />
+<item android:id="@+id/editsettings"
+		android:icon="@drawable/ic_settings"
+        android:title="Settings" /> 
+<item android:id="@+id/editabout"
+		android:icon="@drawable/ic_about"
+		android:title="Help/Feedback"/>
+</menu>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="305dp"
+    android:background="@color/commonBackground"
+    android:id="@+id/LayoutDBAdminImport"
+    >
+<TextView android:text="@string/txtLocationToImport"
+			android:id="@+id/LocationTextI01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<Spinner android:id="@+id/spnFileToImport"
+    android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top">
+</Spinner>
+
+
+<TextView android:text="@string/txtDataToImport"
+			android:id="@+id/DataTextI01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+			
+<Spinner android:id="@+id/spnTableNameI"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:drawSelectorOnTop="true">
+</Spinner>
+
+
+
+<RelativeLayout android:id="@+id/RelativeLayoutI01"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+
+<Button android:text="@string/buttonImport" 
+		android:id="@+id/btnDBImport" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

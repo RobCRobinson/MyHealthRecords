@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="275dp"
+    android:background="@color/commonBackground"
+    android:id="@+id/LayoutWeightsInput"
+    >
+<TextView android:text="@string/txtHeight"
+			android:id="@+id/HeightText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<TextView android:id="@+id/HeightTextMeasure01"
+			android:layout_toRightOf="@id/HeightText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtInputHeight" 
+			android:inputType="numberDecimal"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/HeightText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+<TextView android:text="@string/txtWeight"
+			android:id="@+id/WeightText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtInputHeight"
+			android:textColor="@color/commonText"
+			></TextView>
+<TextView android:id="@+id/WeightTextMeasure01"
+			android:layout_toRightOf="@id/WeightText01"
+			android:layout_below="@id/edtInputHeight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtInputWeight" 
+			android:inputType="numberDecimal"			
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/WeightText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<TextView android:text="@string/txtNotes"
+			android:id="@+id/WeightsNotesText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtInputWeight"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<EditText android:id="@+id/edtInputNotes" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/WeightsNotesText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+			
+<TextView android:text="@string/txtDate"
+			android:id="@+id/DateText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtInputNotes"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtWeightInputRecDate" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/DateText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+
+<Button android:text="@string/buttonSave" 
+		android:id="@+id/btnSaveWeights" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/edtWeightInputRecDate"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+<Button android:text="@string/buttonDelete" 
+		android:id="@+id/btnDeleteWeights" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/btnSaveWeights"
+		android:layout_alignTop="@id/btnSaveWeights"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+
+
+</RelativeLayout>
+</ScrollView>

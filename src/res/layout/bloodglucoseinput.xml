@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+
+<RelativeLayout 
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="320dp"
+    android:background="@color/commonBackground"
+    android:id="@+id/LayoutBloodGlucoseInput"
+    >
+<TextView android:text="@string/txtBloodGlucoseReading"
+			android:id="@+id/BloodGlucoseText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<EditText android:id="@+id/edtBloodGlucoseReading" 
+			android:selectAllOnFocus="true"
+			android:inputType="number"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/BloodGlucoseText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<TextView android:text="@string/txtBloodGlucosePrePost"
+			android:id="@+id/BloodGlucosePrePostText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtBloodGlucoseReading"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<Spinner android:id="@+id/spBloodGlucosePrePost"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/BloodGlucosePrePostText01"
+    android:prompt="@string/txtBloodGlucosePrePost"
+    android:drawSelectorOnTop="true">
+    </Spinner>
+
+<TextView android:text="@string/txtBloodGlucoseMealType"
+			android:id="@+id/BloodGlucoseMealTypeText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/spBloodGlucosePrePost"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<Spinner android:id="@+id/spBloodGlucoseMealType"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/BloodGlucoseMealTypeText01"
+    android:prompt="@string/txtBloodGlucoseMealType"
+    android:drawSelectorOnTop="true">
+    </Spinner>
+
+<TextView android:text="@string/txtBloodGlucoseMedication"
+			android:id="@+id/BloodGlucoseMedicationText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/spBloodGlucoseMealType"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<EditText android:id="@+id/edtBloodGlucoseMedication" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/BloodGlucoseMedicationText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<TextView android:text="@string/txtBloodGlucoseFoods"
+			android:id="@+id/BloodGlucoseFoodsText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtBloodGlucoseMedication"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<EditText android:id="@+id/edtBloodGlucoseFoods" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/BloodGlucoseFoodsText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<TextView android:text="@string/txtNotes"
+			android:id="@+id/BloodGlucoseNotesText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtBloodGlucoseFoods"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<EditText android:id="@+id/edtBloodGlucoseNotes" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/BloodGlucoseNotesText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<TextView android:text="@string/txtDate"
+			android:id="@+id/DateText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/edtBloodGlucoseNotes"
+			android:textColor="@color/commonText"
+			></TextView>
+
+			
+<EditText android:id="@+id/edtBloodGlucoseInputRecDate" 
+			android:selectAllOnFocus="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/DateText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+
+<Button android:text="@string/buttonSave" 
+		android:id="@+id/btnSaveBloodGlucose" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/edtBloodGlucoseInputRecDate"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+<Button android:text="@string/buttonDelete" 
+		android:id="@+id/btnDeleteBloodGlucose" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/btnSaveBloodGlucose"
+		android:layout_alignTop="@id/btnSaveBloodGlucose"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+
+
+
+</RelativeLayout>
+</ScrollView>

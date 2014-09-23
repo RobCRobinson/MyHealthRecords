@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/showall"
+		android:icon="@drawable/ic_showall"
+        android:title="Show All" />
+<item android:id="@+id/showten"
+		android:icon="@drawable/ic_showlast"
+        android:title="Show Last" />
+<item android:id="@+id/filter"
+		android:icon="@drawable/ic_showfilter"
+        android:title="Filter Records" /> 
+<item android:id="@+id/persons"
+		android:icon="@drawable/ic_persons"
+        android:title="Switch Person" /> 
+<item android:id="@+id/emailRecords"
+		android:icon="@drawable/ic_email"
+		android:title="Email"/>
+<item android:id="@+id/textMessageRecords"
+		android:icon="@drawable/ic_text"
+		android:title="Send by Text Message"/>
+<item android:id="@+id/copyClipboard"
+		android:icon="@drawable/ic_clipboard"
+		android:title="Copy to Clipboard"/>
+<item android:id="@+id/exit"
+		android:icon="@drawable/ic_mainmenu"
+        android:title="Main Menu" />         
+</menu>

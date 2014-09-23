@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+ <color name="rowEven">#C0C0C0</color>
+ <color name="rowOdd">#F0F0F0</color>
+ <color name="rowSelected">#FFFF00</color>
+ <color name="commonText">#000000</color>
+ <color name="commonBackground">#82CAFA</color>
+ <color name="buttonPressedGrad1">#FF0000</color>
+ <color name="buttonPressedGrad2">#990000</color>
+ <color name="buttonPressedText">#C0C0C0</color>
+ <color name="buttonFocusedGrad1">#FF8040</color>
+ <color name="buttonFocusedGrad2">#998040</color>
+ <color name="buttonFocusedText">#C0C0C0</color>
+ <color name="buttonColorGrad1">#C0C0C0</color>
+ <color name="buttonColorGrad2">#404040</color>
+ <color name="buttonText">#000000</color>
+ <color name="warningBack">#FF0000</color>
+ <color name="warningText">#FFFFFF</color>
+ 
+</resources>

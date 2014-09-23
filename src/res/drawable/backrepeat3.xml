@@ -1,0 +1,6 @@
+<bitmap
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/backgroundImage"
+android:src="@drawable/listview_background3"
+android:tileMode="repeat"
+android:dither="true" />

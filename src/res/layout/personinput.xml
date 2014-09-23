@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:background="@color/commonBackground"
+    android:id="@+id/LayoutPersonInput"
+    >
+<TextView android:text="@string/txtPersonName"
+			android:id="@+id/PersonNameText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+<EditText android:id="@+id/edtInputPersonName" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/PersonNameText01"
+			android:width="294dp"
+			android:height="40dp"
+			android:gravity="top"
+			>
+			</EditText>
+
+<Button android:text="@string/buttonSavePerson" 
+		android:id="@+id/btnSavePerson" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/edtInputPersonName"
+		android:height="25dp"
+		android:width="145dp"
+		></Button>
+
+
+</RelativeLayout>
+</ScrollView>

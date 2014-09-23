@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutPersons">
+
+    <TextView android:text="@string/personsText"
+			android:id="@+id/PersonsText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText">
+			</TextView>
+    
+    
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+android:id="@+id/SettingsScroller"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutPersonsOptions"
+    >
+
+
+<Button android:id="@+id/btnAddPerson"
+	android:text="@string/titlePerson"
+    android:padding="2dp"
+    android:layout_marginTop="5dp"
+    android:onClick="addPerson"
+    android:layout_width="200dp"
+	android:layout_height="40dp"
+	android:gravity="center_vertical|center_horizontal" 
+	android:layout_gravity="center_vertical|center_horizontal|center"
+	>
+	</Button>	
+
+    
+<TextView android:text="@string/personNames"
+ 	android:id="@+id/lblPersons"
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content"
+ 	android:textColor="@color/commonText">
+ 	</TextView>
+    
+<Spinner android:id="@+id/spnPersons"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:prompt="@string/personNames"
+ 	android:drawSelectorOnTop="true" 
+ 	android:gravity="center_vertical|center_horizontal" 
+	android:layout_gravity="center_vertical|center_horizontal|center">
+ 	</Spinner>
+
+
+<Button android:id="@+id/btnChangeName"
+	android:text="@string/buttonChangeName"
+    android:padding="2dp"
+    android:layout_marginTop="5dp"
+    android:onClick="changeName"
+    android:layout_width="200dp"
+	android:layout_height="40dp"
+	android:gravity="center_vertical|center_horizontal" 
+	android:layout_gravity="center_vertical|center_horizontal|center"
+	>
+</Button>
+
+<Button android:id="@+id/btnSetDefault"
+	android:text="@string/buttonSetDefault"
+    android:padding="2dp"
+    android:layout_marginTop="5dp"
+    android:onClick="setDefault"
+    android:layout_width="200dp"
+	android:layout_height="40dp"
+	android:gravity="center_vertical|center_horizontal" 
+	android:layout_gravity="center_vertical|center_horizontal|center"
+	>
+</Button>
+
+    <Button android:id="@+id/btnDeletePerson"
+	android:text="@string/buttonDeletePerson"
+    android:padding="2dp"
+    android:layout_marginTop="5dp"
+    android:onClick="deletePerson"
+    android:layout_width="200dp"
+	android:layout_height="40dp"
+	android:gravity="center_vertical|center_horizontal" 
+	android:layout_gravity="center_vertical|center_horizontal|center"
+	>
+</Button>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

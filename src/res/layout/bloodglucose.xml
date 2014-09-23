@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:id="@+id/LayoutBloodGlucose"
+    >
+    
+<TextView android:text="@string/bloodsugarText"
+			android:id="@+id/BSText01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/commonText"
+			></TextView>
+
+<Button android:id="@+id/btnNewBSRecord"
+		android:text="@string/enterNewRecord"
+		android:onClick="newRecord"
+		android:layout_width="200dp"
+		android:layout_height="40dp"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_gravity="center_vertical|center_horizontal|center"
+		></Button>
+
+<include layout="@layout/datarows"></include>
+
+
+</LinearLayout>
